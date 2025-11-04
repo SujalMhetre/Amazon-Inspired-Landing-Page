@@ -25,7 +25,7 @@ This project is a **fully responsive clone of Amazon's landing page**, built usi
 
 ---
 
-## 🎬 Preview![Responsive Preview](Assets/screenshots/preview.png)
+## 🎬 Preview![Responsive Preview](Assets/Screenshots/preview.png)
 ---
 
 ## 📂 Project Assets  

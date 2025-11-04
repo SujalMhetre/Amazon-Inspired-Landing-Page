@@ -12,13 +12,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: all 0.2s ease-in-out;
 }
 
 html,
 body {
-    height: 100%;
-    width: 100%;
     font-family: "Outfit", sans-serif;
     scroll-behavior: smooth;
 }
@@ -351,14 +348,35 @@ header {
 
     #hero-desktop {
         display: flex;
-        align-items: flex-end;
         justify-content: center;
         width: 100%;
-        background-image: url(Assets/hero_images/hero_image.jpg);
+        background:
+            linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgb(255, 255, 255) 100%),
+            url('Assets/hero_images/hero_image1.jpg');
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
-        height: 25vh;
+        height: 30vh;
+        position: relative;
+        transition: opacity 0.5s step-end;
+    }
+
+    .ri-arrow-left-wide-line {
+        position: absolute;
+        left: 0;
+        top: 40%;
+        font-size: 3rem;
+        opacity: .5;
+        cursor: pointer;
+    }
+
+    .ri-arrow-right-wide-fill {
+        position: absolute;
+        right: 0;
+        top: 40%;
+        font-size: 3rem;
+        opacity: .5;
+        cursor: pointer;
     }
 
     #tagline {
@@ -368,6 +386,9 @@ header {
         padding: 10px;
         text-align: center;
         max-width: 1500px;
+        position: absolute;
+        bottom: 0;
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
     }
 
     #tagline p {
@@ -755,6 +776,7 @@ a {
 
     .slider-img img:hover {
         transform: scale(1.05);
+        transition: all 0.5s ease-in-out;
     }
 }
 
